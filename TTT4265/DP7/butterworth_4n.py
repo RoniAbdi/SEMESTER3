@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FixedLocator, FuncFormatter
 
 ROOT = Path(__file__).resolve().parent
-source = ROOT / "bwf_4n.csv"
+source = ROOT / "csv_filer" / "bwf_4n.csv"
 
 lines = source.read_text(encoding="utf-8-sig").splitlines()
 header = next(i for i, line in enumerate(lines) if line.startswith("Frequency"))
